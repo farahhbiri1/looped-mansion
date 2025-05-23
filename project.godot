@@ -11,8 +11,11 @@ config_version=5
 [application]
 
 config/name="Looped Mansion"
+<<<<<<< HEAD
 run/main_scene="res://Scenes/main.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
+=======
+>>>>>>> 6d2794fb5d700e6cae6118f9409bfc9d92f3b57c
 config/icon="res://icon.svg"
 
 [rendering]
