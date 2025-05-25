@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brwkf24o7oldu"
-path="res://.godot/imported/doorr.png-ea36b0079381bd65d93867ab587c8ef8.ctex"
+path="res://.godot/imported/doorr.png-ca449c28a06bb820538db09dd6598ba6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/background/doorr.png"
-dest_files=["res://.godot/imported/doorr.png-ea36b0079381bd65d93867ab587c8ef8.ctex"]
+source_file="res://Assets/background/doorr.png"
+dest_files=["res://.godot/imported/doorr.png-ca449c28a06bb820538db09dd6598ba6.ctex"]
 
 [params]
 

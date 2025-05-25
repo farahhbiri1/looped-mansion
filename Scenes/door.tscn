@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3 uid="uid://bscw6jjne1thi"]
+
+[ext_resource type="Texture2D" uid="uid://04cph8wflaqg" path="res://Assets/background/Hoovered door.png" id="1_3hi0q"]
+[ext_resource type="Texture2D" uid="uid://m6fc6snb6ivc" path="res://Assets/background/Door.png" id="2_0aur0"]
+[ext_resource type="Script" path="res://Scripts/door.gd" id="3_v8rfa"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_na660"]
+atlas = ExtResource("1_3hi0q")
+region = Rect2(0, 0, 59, 73)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6nc8b"]
+atlas = ExtResource("2_0aur0")
+region = Rect2(0, 0, 59, 73)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7eo03"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_na660")
+}],
+"loop": true,
+"name": &"Hoover",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6nc8b")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Door" type="Node2D"]
+script = ExtResource("3_v8rfa")
+
+[node name="Door" type="AnimatedSprite2D" parent="."]
+position = Vector2(-75, -74)
+scale = Vector2(1.65855, 2.02425)
+sprite_frames = SubResource("SpriteFrames_7eo03")
+
+[node name="area" type="Area2D" parent="."]
+scale = Vector2(1, 1)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="area"]
+visible = false
+position = Vector2(-74.8928, -74.5481)
+scale = Vector2(1.62893, 2.03398)
+polygon = PackedVector2Array(-8.44111, -27.1706, 12.6617, -27.1706, 13.2646, -24.7005, 15.6763, -25.1945, 15.6763, -21.7364, 19.294, -21.7364, 18.691, -18.7724, 21.1028, -18.7724, 21.7057, -15.8083, 24.7204, -15.8083, 24.7204, 36.5567, -17.4852, 37.0508, -17.4852, -18.2784, -14.4705, -18.2784, -14.4705, -21.7364, -11.4558, -21.7364, -11.4558, -24.7005, -8.44111, -24.7005)

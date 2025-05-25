@@ -49,7 +49,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_g8tsi")
 }],
 "loop": true,
-"name": &"default",
+"name": &"idle",
 "speed": 10.0
 }]
 
@@ -62,4 +62,4 @@ polygon = PackedVector2Array(1, -1, 12, -1, 13, 2, 13, 13, 9, 13, 13, 18, 17, 33
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_27tu3")
-frame_progress = 0.375359
+animation = &"idle"
